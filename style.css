@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    background-color: rgb(2, 2, 31);
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding-top: 50px;
+    height: 100vh;
+    font-family: "poppins", sans-serif;
+  }
+  
+  .toDoApp {
+    width: 60%;
+  }
+  
+  .toDoApp h1 {
+    color: greenyellow;
+    font-size: 3em;
+    font-weight: 900;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: #ffffff5a;
+  }
+  
+  .toDoApp form {
+    display: flex;
+    width: 100%;
+    background-color: #262e4c;
+  }
+  
+  .toDoApp form input {
+    border: none;
+    background-color: #3c4979;
+    font-size: 1.2em;
+    color: white;
+    padding: 15px 10px;
+    width: 100%;
+    outline: 0;
+  }
+  
+  .toDoApp form button {
+    width: 10%;
+    border: none;
+    background-color: yellowgreen;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .container ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5em;
+    color: #fff;
+    width: 60%;
+  }
+  
+  .container ul li {
+    padding: 15px 10px;
+    border: 1.5px solid white;
+  }
+  
+  li input {
+      width: fit-content;
+  }
+  
+  .check {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-appearance: none;
+  }
+  
+  .check:checked {
+    background-color: yellowgreen;
+    border: 1px solid #3c4979;
+  }
+  
+  .task {
+    font-size: 1.3em;
+    padding: 0 10px;
+    width: fit-content;
+    background: transparent;
+    border: none;
+    color: #fff;
+  }
+  
+  .task:focus {
+    outline: none;
+  }
+  
+  .container .fa-trash {
+    float: right;
+    cursor: pointer;
+    font-size: 1.3em;
+  }
+  
+  .container ul li i:hover {
+    color: rgb(255, 82, 82);
+  }
+  
+  .completed {
+    color: rgba(255, 255, 255, 0.633);
+    text-decoration: line-through;
+  }
+  
+  @media screen and (max-width: 768px) {
+  body {
+      font-size: 12px;
+  }
+    .toDoApp {
+      width: 95%;
+    }
+  
+    .container ul {
+      width: 95%;
+    }
+  
+    .toDoApp form button {
+    width: 15%;
+  }
+  }
